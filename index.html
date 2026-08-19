@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>iPresence — Check-in real, onde você está</title>
+  <meta name="description" content="Registro de presença em eventos comprovado por GPS. Cerca geográfica, QR code, listas de convidados, formulários personalizados e relatórios — para igrejas, empresas, escolas e eventos." />
+  <meta property="og:title" content="iPresence — Check-in real, onde você está" />
+  <meta property="og:description" content="Presença comprovada por GPS. Sem lista de papel, sem 'assina pra mim'." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.ipresence.com.br" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%232563eb'/%3E%3Cpath d='M32 14c-8 0-14 6-14 14 0 10 14 22 14 22s14-12 14-22c0-8-6-14-14-14zm0 19a5 5 0 110-10 5 5 0 010 10z' fill='%23fff'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site on-dark">
+  <div class="wrap">
+    <a class="brand" href="#">
+      <span class="brand-badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.5 4 9.9 4 15.4 12 22 12 22s8-6.6 8-12.1C20 5.5 16.4 2 12 2zm0 10.7a2.8 2.8 0 110-5.6 2.8 2.8 0 010 5.6z"/></svg>
+      </span>
+      <span class="brand-name"><span class="i">i</span><span class="p">Presence</span></span>
+    </a>
+    <nav>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#segmentos">Para quem</a>
+      <a href="#planos">Planos</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn btn-ghost btn-sm" href="/suporte.html">Suporte</a>
+  </div>
+</header>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero on-dark">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><span class="dot"></span> Em breve na App Store e no Google Play</span>
+      <h1>A prova de presença que <em>ninguém consegue driblar</em>.</h1>
+      <p class="lead">
+        O iPresence confirma quem realmente esteve no seu evento usando a localização
+        do celular — validada no servidor, dentro de uma cerca geográfica que você desenha
+        no mapa. Chega de lista de papel, chega de “assina aí pra mim”.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/suporte.html">Quero conhecer</a>
+        <a class="btn btn-ghost" href="#como-funciona">Ver como funciona</a>
+      </div>
+      <p class="store-note">Lançamento para iPhone e Android. Grátis para começar.</p>
+    </div>
+    <div class="phone reveal">
+      <div class="phone-screen">
+        <div class="ps-head">
+          <div class="t">Culto de Domingo</div>
+          <div class="s">📍 Igreja Central · 19:00</div>
+        </div>
+        <div class="ps-body">
+          <div class="ps-map"></div>
+          <div class="ps-card">
+            <div class="ps-row">
+              <span class="ps-pin"><svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.5 4 9.9 4 15.4 12 22 12 22s8-6.6 8-12.1C20 5.5 16.4 2 12 2zm0 10.7a2.8 2.8 0 110-5.6 2.8 2.8 0 010 5.6z"/></svg></span>
+              <div>
+                <div class="ps-name">Você está dentro da área</div>
+                <div class="ps-meta">a 12 m do ponto de check-in</div>
+              </div>
+            </div>
+            <div class="ps-ok">
+              <svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg>
+              Presença registrada com sucesso
+            </div>
+          </div>
+          <div class="ps-btn">Registrar presença</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DOR ═══ -->
+<section class="light" id="dor">
+  <div class="wrap center reveal">
+    <div class="kicker">O problema</div>
+    <h2 class="title">Controlar presença ainda é um trabalho manual, lento e fácil de burlar</h2>
+    <p class="sub">Se você organiza encontros com pessoas, provavelmente já viveu pelo menos uma dessas situações:</p>
+    <div class="pains">
+      <div class="pain reveal">
+        <div class="q">“A lista de papel sumiu (de novo).”</div>
+        <p>Folhas assinadas se perdem, viram retrabalho de digitação e não geram nenhum relatório confiável.</p>
+      </div>
+      <div class="pain reveal">
+        <div class="q">“Fulano assinou pelo amigo que faltou.”</div>
+        <p>Assinatura não prova que a pessoa estava lá. Sem verificação de local, qualquer lista é só uma formalidade.</p>
+      </div>
+      <div class="pain reveal">
+        <div class="q">“Levo horas pra fechar o relatório.”</div>
+        <p>Consolidar presenças, cruzar com cadastros e responder “quem veio?” não deveria tomar sua noite.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ COMO FUNCIONA ═══ -->
+<section class="light alt" id="como-funciona">
+  <div class="wrap center reveal">
+    <div class="kicker">Como funciona</div>
+    <h2 class="title">Três passos e a presença vira prova</h2>
+    <p class="sub">Simples pra quem organiza, instantâneo pra quem participa.</p>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="n">1</span>
+        <h3>Desenhe a área do evento</h3>
+        <p>Marque o local no mapa e defina a cerca geográfica — um círculo ou retângulo com o tamanho e a rotação que você quiser, de uma sala a um estádio.</p>
+      </div>
+      <div class="step reveal">
+        <span class="n">2</span>
+        <h3>Convide os participantes</h3>
+        <p>Compartilhe o código do evento pelo WhatsApp. Eventos públicos aparecem no mapa; restritos exigem código ou lista de convidados.</p>
+      </div>
+      <div class="step reveal">
+        <span class="n">3</span>
+        <h3>Presenças comprovadas em tempo real</h3>
+        <p>Cada check-in é validado no servidor: só conta se o celular estiver dentro da área, na janela de horário. Você acompanha tudo ao vivo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FUNCIONALIDADES ═══ -->
+<section class="light" id="funcionalidades">
+  <div class="wrap center reveal">
+    <div class="kicker">Funcionalidades</div>
+    <h2 class="title">Tudo que o controle de presença moderno precisa</h2>
+    <p class="sub">Do check-in à análise, sem planilha improvisada no meio do caminho.</p>
+    <div class="features">
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.5 4 9.9 4 15.4 12 22 12 22s8-6.6 8-12.1C20 5.5 16.4 2 12 2zm0 10.7a2.8 2.8 0 110-5.6 2.8 2.8 0 010 5.6z"/></svg></div>
+        <h3>Cerca geográfica no mapa</h3>
+        <p>Círculo ou retângulo com rotação livre. A validação acontece no servidor — o app do participante nunca decide sozinho.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11h8V3H3v8zm2-6h4v4H5V5zM3 21h8v-8H3v8zm2-6h4v4H5v-4zM13 3v8h8V3h-8zm6 6h-4V5h4v4zM13 13h2v2h-2zM17 17h2v2h-2zM13 17h2v2h-2zM15 15h2v2h-2zM17 13h2v2h-2zM19 15h2v2h-2zM19 19h2v2h-2zM15 19h2v2h-2z"/></svg></div>
+        <h3>QR code + GPS juntos</h3>
+        <p>Convidados recebem QR individual e podem entrar pelos dois caminhos: escaneados na porta ou por GPS dentro da área.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-8 0c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5c0-2.3-4.7-3.5-7-3.5zm8 0c-.3 0-.6 0-1 .1 1.2.8 2 2 2 3.4V19h6v-2.5c0-2.3-4.7-3.5-7-3.5z"/></svg></div>
+        <h3>Listas de convidados (3 modos)</h3>
+        <p>Aberta, com aprovação individual ou nominal por CPF — você escolhe o nível de controle de cada evento.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-8 14H7v-2h4v2zm6-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></div>
+        <h3>Formulários personalizados</h3>
+        <p>Pergunte o que quiser no check-in: cargo, turma, setor, congregação. Modelos reutilizáveis, pessoais ou da organização.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 9.2h3V19H5V9.2zM10.6 5h2.8v14h-2.8V5zm5.6 8H19v6h-2.8v-6z"/></svg></div>
+        <h3>Relatórios com filtros inteligentes</h3>
+        <p>Filtre presenças por qualquer resposta do formulário, combine critérios (E/OU) e exporte exatamente o recorte que precisa.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></svg></div>
+        <h3>Exportação XLSX e PDF</h3>
+        <p>Relatórios prontos pra prestação de contas: planilha pra análise, PDF pra assinatura e arquivo — com um toque.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5l-9-4zm0 10.9h7c-.5 4.1-3.3 7.9-7 9V12H5V6.3l7-3.1v8.7z"/></svg></div>
+        <h3>Antifraude de aparelho</h3>
+        <p>Se o mesmo celular registrar presença pra contas diferentes, o organizador é avisado na hora — com nome e horário.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg></div>
+        <h3>Organizações com papéis</h3>
+        <p>Administrador geral, gestores e visualizadores — cada um com o acesso certo, entrando por código de convite.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 5.9a2.1 2.1 0 110 4.2 2.1 2.1 0 010-4.2m0 9c3 0 6.1 1.5 6.1 2.1v1.1H5.9V17c0-.6 3.1-2.1 6.1-2.1M12 4a4 4 0 100 8 4 4 0 000-8zm0 9c-2.7 0-8 1.3-8 4v3h16v-3c0-2.7-5.3-4-8-4z"/></svg></div>
+        <h3>Resposta ao convite (RSVP)</h3>
+        <p>Convidados avisam se vão ou não antes do evento — e você acompanha confirmados, pendentes e presentes num painel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ANTIFRAUDE BAND ═══ -->
+<section class="light alt">
+  <div class="wrap reveal">
+    <div class="band">
+      <div>
+        <h3>Presença que vale como prova, não como promessa</h3>
+        <p>
+          Cada registro carrega localização validada no servidor, distância exata do ponto
+          do evento, horário e identificação do aparelho. O participante não consegue burlar
+          desligando o app, usando print ou emprestando a senha — e você enxerga qualquer
+          comportamento suspeito na hora.
+        </p>
+      </div>
+      <ul>
+        <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg> Validação de GPS no servidor, nunca no celular</li>
+        <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg> Janela de horário com tolerância configurada</li>
+        <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg> Alerta de mesmo aparelho em contas diferentes</li>
+        <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg> Uma conta por CPF — sem cadastros duplicados</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SEGMENTOS ═══ -->
+<section class="light" id="segmentos">
+  <div class="wrap center reveal">
+    <div class="kicker">Para quem é</div>
+    <h2 class="title">Feito para quem precisa saber quem estava lá</h2>
+    <p class="sub">Um único app, configurável para realidades completamente diferentes.</p>
+    <div class="segments">
+      <div class="segment reveal">
+        <div class="emoji">⛪</div>
+        <h3>Igrejas e ministérios</h3>
+        <p>Presença por culto e congregação, cargos ministeriais no formulário, listas nominais para reuniões de obreiros.</p>
+      </div>
+      <div class="segment reveal">
+        <div class="emoji">🏢</div>
+        <h3>Empresas e RH</h3>
+        <p>Treinamentos, integrações e brigadas com presença comprovada — relatório pronto pra auditoria e certificação.</p>
+      </div>
+      <div class="segment reveal">
+        <div class="emoji">🎓</div>
+        <h3>Educação</h3>
+        <p>Aulas, palestras e atividades complementares com registro por turma e curso — sem chamada em voz alta.</p>
+      </div>
+      <div class="segment reveal">
+        <div class="emoji">🎪</div>
+        <h3>Eventos e produtoras</h3>
+        <p>Credenciamento com QR na entrada, lotação em tempo real e lista de convidados com aprovação.</p>
+      </div>
+      <div class="segment reveal">
+        <div class="emoji">🤝</div>
+        <h3>ONGs e projetos sociais</h3>
+        <p>Comprovação de participação em ações e oficinas para prestação de contas a financiadores e editais.</p>
+      </div>
+      <div class="segment reveal">
+        <div class="emoji">🏛️</div>
+        <h3>Órgãos e entidades</h3>
+        <p>Audiências, capacitações e mutirões com presença auditável, exportada em PDF com um toque.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PLANOS ═══ -->
+<section class="light alt" id="planos">
+  <div class="wrap center reveal">
+    <div class="kicker">Planos</div>
+    <h2 class="title">Comece grátis, cresça quando precisar</h2>
+    <p class="sub">Sem cartão de crédito pra começar. Eventos públicos são ilimitados em qualquer plano.</p>
+    <div class="plans">
+      <div class="plan reveal">
+        <h3>Grátis</h3>
+        <div class="price">R$ 0</div>
+        <div class="per">pra sempre</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg> Eventos públicos ilimitados</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg> Até 4 eventos restritos por mês</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg> Até 100 presenças por evento restrito</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg> Formulários, relatórios e exportação</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg> Organizações e listas de convidados</li>
+        </ul>
+      </div>
+      <div class="plan pro reveal">
+        <span class="tag">RECOMENDADO</span>
+        <h3>iPresence Pro</h3>
+        <div class="price">R$ 19,90<small>/mês</small></div>
+        <div class="per">assinatura pelo próprio app</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg> Tudo do plano Grátis</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg> Eventos restritos ilimitados</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg> Presenças ilimitadas por evento</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.6L4 14.1 9 19 20 8l-1.4-1.4z"/></svg> Ideal pra rotinas semanais e grandes eventos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section class="light" id="faq">
+  <div class="wrap center reveal">
+    <div class="kicker">Dúvidas frequentes</div>
+    <h2 class="title">Perguntas que sempre nos fazem</h2>
+    <div class="faq">
+      <details class="reveal">
+        <summary>O participante precisa ter o app instalado?</summary>
+        <p>Sim — é o app que comprova a localização com segurança. O cadastro é gratuito, leva menos de um minuto e vale pra qualquer evento que a pessoa participar depois.</p>
+      </details>
+      <details class="reveal">
+        <summary>E se o GPS do celular estiver impreciso?</summary>
+        <p>Você controla o tamanho da cerca do evento — dá pra acomodar a imprecisão típica do GPS. A distância exata de cada registro fica salva no relatório, com transparência total.</p>
+      </details>
+      <details class="reveal">
+        <summary>Dá pra impedir que alguém registre presença pelo colega?</summary>
+        <p>Cada conta é única por CPF, e o iPresence detecta quando o mesmo aparelho registra presença pra contas diferentes no mesmo evento — o organizador é alertado com nome e horário.</p>
+      </details>
+      <details class="reveal">
+        <summary>Meus dados e os dos participantes ficam seguros?</summary>
+        <p>Sim. A localização só é registrada no momento do check-in (nunca rastreamos em segundo plano), os dados trafegam criptografados e seguimos a LGPD. Veja a <a href="/privacidade.html">Política de Privacidade</a>.</p>
+      </details>
+      <details class="reveal">
+        <summary>Funciona pra eventos grandes?</summary>
+        <p>Sim — cercas de até vários quilômetros, credenciamento por QR na entrada, lotação em tempo real e relatórios que aguentam milhares de registros.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA FINAL ═══ -->
+<section class="light">
+  <div class="wrap reveal">
+    <div class="cta-final">
+      <h2>Pronto pra aposentar a lista de papel?</h2>
+      <p>Entre na lista de lançamento e seja avisado assim que o iPresence chegar às lojas.</p>
+      <a class="btn btn-primary" href="/suporte.html">Falar com a gente</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site on-dark">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="#">
+          <span class="brand-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.5 4 9.9 4 15.4 12 22 12 22s8-6.6 8-12.1C20 5.5 16.4 2 12 2zm0 10.7a2.8 2.8 0 110-5.6 2.8 2.8 0 010 5.6z"/></svg>
+          </span>
+          <span class="brand-name"><span class="i">i</span><span class="p">Presence</span></span>
+        </a>
+        <p style="margin-top:14px;font-size:14px;max-width:26rem;">
+          Check-in real, onde você está. Registro de presença comprovado por GPS
+          para eventos de todos os tamanhos.
+        </p>
+      </div>
+      <div>
+        <h4>Produto</h4>
+        <ul>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#funcionalidades">Funcionalidades</a></li>
+          <li><a href="#planos">Planos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ajuda e legal</h4>
+        <ul>
+          <li><a href="/suporte.html">Suporte</a></li>
+          <li><a href="/privacidade.html">Política de Privacidade</a></li>
+          <li><a href="/exclusao-de-conta.html">Exclusão de conta</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© 2026 iPresence. Todos os direitos reservados.</span>
+      <span>Feito no Brasil 🇧🇷</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // revela as seções conforme entram na tela
+  const io = new IntersectionObserver(
+    (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add("in")),
+    { threshold: 0.12 }
+  );
+  document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+</script>
+</body>
+</html>
