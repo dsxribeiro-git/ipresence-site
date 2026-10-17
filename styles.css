@@ -316,3 +316,17 @@ footer.site .foot-note { border-top: 1px solid rgba(255,255,255,0.08); padding-t
   section.light { padding: 64px 0; }
   .hero-stats { gap: 22px; }
 }
+
+/* Quadro de comparação dos planos */
+.compare { max-width: 62rem; margin: 54px auto 0; text-align: left; }
+.compare h3 { font-family: var(--brand); font-weight: 800; font-size: 22px; letter-spacing: -.5px; text-align: center; margin-bottom: 18px; }
+.compare-scroll { overflow-x: auto; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); }
+.compare table { width: 100%; min-width: 760px; border-collapse: collapse; font-size: 14px; }
+.compare thead th { background: #eff6ff; color: var(--navy); font-weight: 800; padding: 14px 10px; text-align: center; position: sticky; top: 0; }
+.compare thead th:first-child { text-align: left; }
+.compare tbody th { text-align: left; font-weight: 500; padding: 12px 14px; color: var(--ink); width: 30%; }
+.compare tbody td { text-align: center; padding: 12px 8px; color: var(--ink); border-left: 1px solid var(--line); }
+.compare tbody tr + tr th, .compare tbody tr + tr td { border-top: 1px solid var(--line); }
+.compare tr.grp th { background: var(--mist); color: var(--slate); font-size: 12px; font-weight: 800; letter-spacing: .5px; text-transform: uppercase; padding: 8px 14px; width: auto; }
+.compare td.yes { color: #16a34a; font-weight: 800; font-size: 17px; }
+.compare td.no { color: #cbd5e1; }
